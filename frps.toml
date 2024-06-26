@@ -1,0 +1,7 @@
+bindPort = 7000
+auth.token = "xxxxxx"
+
+webServer.addr = "0.0.0.0"
+webServer.port = 7100
+webServer.user = "admin"
+webServer.password = "xxxxxx"

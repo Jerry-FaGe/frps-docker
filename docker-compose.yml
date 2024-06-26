@@ -1,0 +1,13 @@
+services:
+  frps:
+   build: .
+   image: frps
+   container_name: frps
+   privileged: true
+   restart: always
+   network_mode: host
+   environment:
+     - TZ=Asia/Shanghai
+   volumes:
+     - ./frps.toml:/frp/frps.toml
+   # command: /bin/sh -c /frp/frps -c /frp/frps.toml
